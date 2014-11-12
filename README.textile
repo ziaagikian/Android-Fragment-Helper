@@ -1,0 +1,18 @@
+h1. Fragment Helper 
+
+This is centralized class which provide some basic functionality regarding Fragments. The class facilitates developers how to attach new fragment to activity, open new fragment and pop existing Fragment.
+
+h2. Implementation
+
+You can implement this class in your android project. The class uses static three methods. 
+1)- attachFragment, attach new fragment to activity. 
+2)- openNewFragment, Open new fragment from existing fragment using the id layout of fragment container. Provides developer to add this fragment to back stack. 
+3)- popBackStack, Close the number of fragments. 
+
+h2. License 
+
+Fragment Helper is licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</a>.
+
+h2. Issues 
+
+Please report bugs, tell me about your problems or request features by creating issues on GitHub. 
