@@ -1,6 +1,7 @@
 h1. Fragment Helper 
 
 This is centralized class which provide some basic functionality regarding Fragments. The class facilitates developers how to attach new fragment to activity, open new fragment and pop existing Fragment(s).
+This is heavily inspired from my mentor <a href="http://https://github.com/altafcs"> Altaf Ur Rahman</a>.  
 
 h2. Implementation
 
@@ -17,3 +18,4 @@ Fragment Helper is licensed under the <a href="http://www.apache.org/licenses/LI
 h2. Issues 
 
 Please report bugs, tell me about your problems or request features by creating issues on GitHub. 
+
