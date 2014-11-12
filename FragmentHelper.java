@@ -30,28 +30,30 @@ import org.ziaagikian.personal.R;
 public class FragmentHelper {
 /**
  * <p> Attach new Fragment to Activity.</p>
- * @param context
- * @param fragment
+ * @param context 
+ * @param fragment, fragment to add
+ * @param viewID , layout id to replace the view.
  */
-	public static void attachFragment(Activity context, Fragment fragment) {
+	public static void attachFragment(Activity context, Fragment fragment,int viewID) {
 		FragmentTransaction ft = context.getSupportFragmentManager()
 				.beginTransaction();
-		 ft.add(R.id.fragment_container, fragment).commit();
+		 ft.add( viewID, fragment).commit();
 	}
 	
 	/**
 	 * <p>Open new fragment to existing fragment. Provides developer to add this fragment to backstack.</p>
 	 * @param context
-	 * @param fragment
-	 * @param canAddBackStrace
+	 * @param fragment, fragment to add
+	 * @param viewID , layout id to replace the view.
+	 * @param canAddBackStrace, is added to backstrace
 	 */
 
 	public static void openNewFragment(Activity context, Fragment fragment,
-			boolean canAddBackStrace) {
+			boolean canAddBackStrace, int viewID) {
 		FragmentTransaction ft = context.getSupportFragmentManager()
 				.beginTransaction();
 		ft.setCustomAnimations(android.R.anim.slide_in_left, 0);
-		ft.replace(R.id.fragment_container, fragment);
+		ft.replace(viewID, fragment);
 		ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
 		if (canAddBackStrace) {
 			ft.addToBackStack(null);
@@ -61,7 +63,7 @@ public class FragmentHelper {
 /**
  * <p>Close the number of fragments.</p> 
  * @param context
- * @param numBackStack
+ * @param numBackStack, number of fragments to pop up.
  */
 	public static void popBackStack(Activity context,int numBackStack) {
 		FragmentManager manager = context.getSupportFragmentManager();
