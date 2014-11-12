@@ -4,7 +4,8 @@ This is centralized class which provide some basic functionality regarding Fragm
 
 h2. Implementation
 
-You can implement this class in your android project. The class uses static three methods. 
+You can implement this class in your android project. The class uses three static methods. 
+
 1)- attachFragment, attach new fragment to activity. 
 2)- openNewFragment, Open new fragment from existing fragment using the id layout of fragment container. Provides developer to add this fragment to back stack. 
 3)- popBackStack, Close the number of fragments. 
