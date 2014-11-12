@@ -1,6 +1,6 @@
 h1. Fragment Helper 
 
-This is centralized class which provide some basic functionality regarding Fragments. The class facilitates developers how to attach new fragment to activity, open new fragment and pop existing Fragment.
+This is centralized class which provide some basic functionality regarding Fragments. The class facilitates developers how to attach new fragment to activity, open new fragment and pop existing Fragment(s).
 
 h2. Implementation
 
