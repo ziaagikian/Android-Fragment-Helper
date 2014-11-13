@@ -60,6 +60,23 @@ public class FragmentHelper {
 		}
 		ft.commit();
 	}
+	
+	/**
+ * <p>
+	 * Open new fragment to existing fragment. Provides developer to add this
+	 * fragment to backstack.
+	 * </p>
+ * @param context
+ * @param fragment, fragment to add
+ * @param args, Bundle arguments to pass into next fragment
+ * @param viewID , layout id to replace the view.
+ * @param canAddBackStrace, is added to backstrace
+ */
+	public static void openNewFragment(BaseActivity context,
+			Fragment fragment, Bundle args, boolean canAddBackStrace) {
+		fragment.setArguments(args);
+		openNewFragment(context, fragment, canAddBackStrace);
+	}
 /**
  * <p>Close the number of fragments.</p> 
  * @param context
