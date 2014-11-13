@@ -68,7 +68,7 @@ public class FragmentHelper {
 	public static void popBackStack(Activity context,int numBackStack) {
 		FragmentManager manager = context.getSupportFragmentManager();
 		int fragCount = manager.getBackStackEntryCount();
-		for(int i = fragCount; i < fragCount-numBackStack; i++){
+		for(int i = 0; i < fragCount-numBackStack; i++){
 			manager.popBackStack();
 		}
 	}
