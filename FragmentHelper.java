@@ -73,9 +73,9 @@ public class FragmentHelper {
  * @param canAddBackStrace, is added to backstrace
  */
 	public static void openNewFragment(BaseActivity context,
-			Fragment fragment, Bundle args, boolean canAddBackStrace) {
+			Fragment fragment, Bundle args, boolean canAddBackStrace,int viewID) {
 		fragment.setArguments(args);
-		openNewFragment(context, fragment, canAddBackStrace);
+		openNewFragment(context, fragment, canAddBackStrace,viewID);
 	}
 /**
  * <p>Close the number of fragments.</p> 
